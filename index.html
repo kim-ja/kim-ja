@@ -1,73 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kim Janovski Curriculum Vitae</title>
+
+  <!-- Hacker Theme CSS -->
+  <link rel="stylesheet" href="https://pages-themes.github.io/hacker/assets/css/style.css" />
+
+  <!-- Custom Fonts & Overrides -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg: #f0f8f4;
-      --primary: #9dcf9a;
-      --accent: #c0e2c8;
+      --bg: #f4fdf6;
+      --primary: #8dd3ae;
+      --accent: #b3e8c9;
       --text: #1a1a1a;
-      --card: #ffffff;
     }
 
     body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--primary);
     }
 
     a {
       color: var(--primary);
-      text-decoration: none;
-      transition: 0.3s;
     }
 
     a:hover {
-      text-decoration: underline;
+      color: var(--accent);
+    }
+
+    header h1 {
+      color: var(--primary);
     }
 
     section {
-      background: var(--card);
-      padding: 1.5rem 2rem;
       margin-bottom: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
       color: var(--primary);
-      font-size: 1.75rem;
+      font-size: 1.5em;
       margin-bottom: 1rem;
     }
 
     h3 {
-      margin-top: 1.2rem;
-      font-size: 1.2rem;
+      margin-top: 1rem;
       color: var(--accent);
     }
 
@@ -95,14 +77,10 @@
       color: #000;
     }
 
-    ul {
-      padding-left: 1.2rem;
+    .contact-note {
+      font-style: italic;
     }
   </style>
-
-
-
-
 </head>
 <body>
 
@@ -166,7 +144,7 @@
     <p>Proficient with Python data visualisation packages (NumPy, Pandas, Matplotlib, Plotly etc.)
     <p>Working experience with SQL, MATLAB, Simulink</p>
     <p>Basic experience with mbed (C/C++)</p>
-    <p>Proficient with Microsoft Office <p>
+    <p>Proficient with Microsoft Office</p>
   </section>
 
   <section>
@@ -195,11 +173,10 @@
     <p>Croatian — native/bilingual<br>English — native/bilingual<br>Proficient in South Slavic languages</p>
   </section>
 
-
   <section>
     <h2>Contact Me</h2>
     <p class="contact-note">If you'd like to get in touch, please fill out the form below. Your message will be sent to my email.</p>
-    <form action="https://formspree.io/f/mjkwpvgv" method="POST">
+    <form action="https://formspree.io/f/mjkwpvgv" method="POST"> 
       <input type="text" name="name" placeholder="Your name" required />
       <input type="email" name="email" placeholder="Your email" required />
       <textarea name="message" placeholder="Your message" rows="5" required></textarea>
