@@ -3,100 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kim Janovski | Personal Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <title>Kim Janovski Curriculum Vitae</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #fff0f6;
-      --primary: #a259ff;
-      --accent: #ff75b5;
-      --text: #2d2d2d;
-      --card-bg: #ffffff;
-      --shadow: rgba(0, 0, 0, 0.1);
+      --bg: #f0f8f4;
+      --primary: #9dcf9a;
+      --accent: #c0e2c8;
+      --text: #1a1a1a;
+      --card: #ffffff;
     }
 
     body {
-      font-family: 'Nunito', sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
 
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
 
     header {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
       color: var(--primary);
     }
 
     a {
-      color: var(--accent);
+      color: var(--primary);
       text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     section {
-      background: var(--card-bg);
-      padding: 1.5rem;
+      background: var(--card);
+      padding: 1.5rem 2rem;
       margin-bottom: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px var(--shadow);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
       color: var(--primary);
+      font-size: 1.75rem;
       margin-bottom: 1rem;
     }
 
     h3 {
+      margin-top: 1.2rem;
+      font-size: 1.2rem;
       color: var(--accent);
-      margin-top: 1.5rem;
     }
 
-    p {
-      line-height: 1.6;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    input, textarea {
+    form input,
+    form textarea {
+      width: 100%;
       padding: 0.8rem;
       margin-bottom: 1rem;
       border: 1px solid #ccc;
       border-radius: 8px;
+      font-family: 'Inter', sans-serif;
       font-size: 1rem;
-      font-family: 'Nunito', sans-serif;
     }
 
-    input[type="submit"] {
+    form input[type="submit"] {
       background-color: var(--primary);
       color: white;
       border: none;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      font-weight: bold;
     }
 
-    input[type="submit"]:hover {
+    form input[type="submit"]:hover {
       background-color: var(--accent);
+      color: #000;
     }
 
-    .contact-note {
-      font-style: italic;
-      margin-bottom: 1rem;
+    ul {
+      padding-left: 1.2rem;
     }
   </style>
+
+
+
+
 </head>
 <body>
 
@@ -104,7 +110,7 @@
   <header>
     <h1>Kim Janovski</h1>
     <p>
-      <strong>Email:</strong> <em>Use the contact form below</em><br>
+      <strong>Contact Me:</strong> <em>Use the contact form below</em><br>
       <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kimjanovski" target="_blank">kimjanovski</a>
     </p>
   </header>
@@ -129,7 +135,7 @@
       Strong understanding of waterfall/agile methodologies and business analysis basics</p>
 
     <p><strong>Wharton Online, University of Pennsylvania</strong> — Finance & Quantitative Modeling<br>
-      Financial Acumen and Corporate Finance courses</p>
+      Financial Acumen and Corporate Finance online courses</p>
   </section>
 
   <section>
@@ -156,8 +162,10 @@
 
   <section>
     <h2>Technical Skills</h2>
-    <p>Proficient with Python (NumPy, Pandas, Matplotlib, Plotly), SQL, MATLAB, SolidWorks, Simulink</p>
-    <p>Experience with mbed (C/C++) and Microsoft Office</p>
+    <p>Proficient with Python data visualisation packages (NumPy, Pandas, Matplotlib, Plotly etc)
+    <p>Working experience with SQL, MATLAB, Simulink</p>
+    <p>Basic experience with mbed (C/C++)</p>
+    <p>Proficient with Microsoft Office <p>
   </section>
 
   <section>
@@ -170,7 +178,8 @@
   <section>
     <h2>Awards & Scholarships</h2>
     <ul>
-      <li>Volunteer of the Year nominee — EDT Scotland</li>
+      <li>Winning team of Hack The Climate Hackathon — Wind Europe 2024 Bilbao</li>
+      <li>Volunteer of the Year nominee 2024 — EDT Scotland</li>
       <li>Best BEng Graduate — University of Glasgow</li>
       <li>Engineering Excellence List — 4 academic years</li>
       <li>Rotary Club Zagreb Centar — Scholarship for Excellence</li>
@@ -185,14 +194,10 @@
     <p>Croatian — native/bilingual<br>English — native/bilingual<br>Proficient in South Slavic languages</p>
   </section>
 
-  <section>
-    <h2>Hobbies</h2>
-    <p>Tutoring Croatian, learning languages, painting, working with clay</p>
-  </section>
 
   <section>
     <h2>Contact Me</h2>
-    <p class="contact-note">If you'd like to get in touch, please fill out the form below. Your message will be sent to my private email without revealing it publicly.</p>
+    <p class="contact-note">If you'd like to get in touch, please fill out the form below. Your message will be sent to my email.</p>
     <form action="https://formspree.io/f/mjkwpvgv" method="POST">
       <input type="text" name="name" placeholder="Your name" required />
       <input type="email" name="email" placeholder="Your email" required />
