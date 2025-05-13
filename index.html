@@ -4,63 +4,132 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kim Janovski | Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #fff0f6;
+      --primary: #a259ff;
+      --accent: #ff75b5;
+      --text: #2d2d2d;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
       max-width: 900px;
-      margin: auto;
+      margin: 0 auto;
       padding: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
     }
-    h1, h2 {
-      color: #004466;
-    }
-    a {
-      color: #0077b5;
-      text-decoration: none;
-    }
-    section {
+
+    header {
+      text-align: center;
       margin-bottom: 2rem;
     }
-    form {
-      background: #fff;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
     }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    section {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      color: var(--accent);
+      margin-top: 1.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
     input, textarea {
-      width: 100%;
-      padding: 0.75rem;
+      padding: 0.8rem;
       margin-bottom: 1rem;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 8px;
       font-size: 1rem;
+      font-family: 'Nunito', sans-serif;
     }
+
     input[type="submit"] {
-      background-color: #004466;
+      background-color: var(--primary);
       color: white;
       border: none;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
+
     input[type="submit"]:hover {
-      background-color: #006699;
+      background-color: var(--accent);
+    }
+
+    .contact-note {
+      font-style: italic;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
 
-  <h1>Kim Janovski</h1>
-  <p>
-    <strong>Email:</strong> <em>Use the contact form below</em><br>
-    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kimjanovski" target="_blank">kimjanovski</a>
-  </p>
+<div class="container">
+  <header>
+    <h1>Kim Janovski</h1>
+    <p>
+      <strong>Email:</strong> <em>Use the contact form below</em><br>
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kimjanovski" target="_blank">kimjanovski</a>
+    </p>
+  </header>
 
   <section>
     <h2>About Me</h2>
     <p>
       Kim holds an undergraduate degree from the University of Glasgow, BEng Aerospace Systems, where she graduated as the best in her class. She then joined the University of Strathclyde, where she completed a year of MRes training in offshore renewable energy. During her time there, she worked as a researcher with Siemens Gamesa Renewable Energy, and contributed to projects with Natural Power and RES. She is passionate about teaching STEM and has volunteered with the Engineering Development Trust Scotland, helping increase the exposure of young people to STEM. She has been nominated for Volunteer of the Year.
     </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>University of Strathclyde</strong> — Wind & Marine Energy Systems and Structures CDT<br>
+      Researcher on sensor signals using blade root SCADA data (Siemens Gamesa Renewable Energy)<br>
+      Completed MRes training, CDT modules, and Project Management course (SCQF Level 11)</p>
+
+    <p><strong>University of Glasgow</strong> — BEng Aerospace Systems, 1st Class<br>
+      Best BEng Graduate in School of Aerospace Engineering</p>
+
+    <p><strong>CAPM</strong> (Certified Associate in Project Management)<br>
+      Strong understanding of waterfall/agile methodologies and business analysis basics</p>
+
+    <p><strong>Wharton Online, University of Pennsylvania</strong> — Finance & Quantitative Modeling<br>
+      Financial Acumen and Corporate Finance courses</p>
   </section>
 
   <section>
@@ -86,8 +155,44 @@
   </section>
 
   <section>
+    <h2>Technical Skills</h2>
+    <p>Proficient with Python (NumPy, Pandas, Matplotlib, Plotly), SQL, MATLAB, SolidWorks, Simulink</p>
+    <p>Experience with mbed (C/C++) and Microsoft Office</p>
+  </section>
+
+  <section>
+    <h2>Research</h2>
+    <p><strong>EAWE PhD Seminar on Wind Energy</strong> — Modelling of Ice Throw from Wind Turbines (with Edward Hart)</p>
+    <p><strong>Final Year Project, University of Glasgow</strong> — Ice throw modelling in cold climates; improved industry-standard model by Biswas et al.</p>
+    <p><strong>Croatian National Astronomy Competition</strong> — 1st place projects on Solar Activity & Differential Solar Rotation</p>
+  </section>
+
+  <section>
+    <h2>Awards & Scholarships</h2>
+    <ul>
+      <li>Volunteer of the Year nominee — EDT Scotland</li>
+      <li>Best BEng Graduate — University of Glasgow</li>
+      <li>Engineering Excellence List — 4 academic years</li>
+      <li>Rotary Club Zagreb Centar — Scholarship for Excellence</li>
+      <li>Harvard Prize Book Award</li>
+      <li>National Astronomy Olympiad (Croatia) — multiple 1st place wins</li>
+      <li>IOAA — Croatian National Team Member (Thailand, India)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <p>Croatian — native/bilingual<br>English — native/bilingual<br>Proficient in South Slavic languages</p>
+  </section>
+
+  <section>
+    <h2>Hobbies</h2>
+    <p>Tutoring Croatian, learning languages, painting, working with clay</p>
+  </section>
+
+  <section>
     <h2>Contact Me</h2>
-    <p>If you'd like to get in touch, please fill out the form below. Your message will be sent to my private email without revealing it publicly.</p>
+    <p class="contact-note">If you'd like to get in touch, please fill out the form below. Your message will be sent to my private email without revealing it publicly.</p>
     <form action="https://formspree.io/f/mjkwpvgv" method="POST">
       <input type="text" name="name" placeholder="Your name" required />
       <input type="email" name="email" placeholder="Your email" required />
@@ -95,6 +200,7 @@
       <input type="submit" value="Send Message" />
     </form>
   </section>
+</div>
 
 </body>
 </html>
